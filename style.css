@@ -1,0 +1,107 @@
+*,*::before,*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    background: #2D2E36;
+    padding: 14em 3em;
+    font-family: Poppins, sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    background: #383A45;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2.5em;
+}
+
+.card__img {
+    background-image: url('./mountains.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 29rem;
+    border-radius: 0.8rem;
+    margin-bottom: 2.5em;
+}
+
+.card__heading {
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.16em;
+    letter-spacing: 0em;
+    text-align: left;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    margin-bottom: 1.4em;
+}
+
+.card__text {
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5em;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #8D91A6;
+    margin-bottom: 1em;
+}
+
+.heart-icon {
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+.heart-icon--disabled {
+    fill: #8D91A6;
+}
+
+.heart-icon--enabled {
+    fill: salmon;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .wrapper {
+        padding: 0 3.8em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .card {
+        flex-direction: row;
+        max-width: 72.9rem;
+        margin: 0 auto;
+        padding: 3em;
+    }
+    
+    .card__img {
+        background-position: bottom;
+        height: 25rem;
+        min-width: 25rem;
+        margin-bottom: 0;
+    }
+
+    .card__heading {
+        margin-top: 1em;
+        margin-bottom: 0;
+    }
+
+    .card__text {
+        margin-bottom: 0;
+    }
+}
